@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@1,500;1,700;1,800&family=Outfit:wght@300;400;600&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Outfit",sans-serif;
+}
+body
+{
+    color: hsl(0, 0%, 100%);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+}
+
+.whole
+{
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 1rem;
+    max-width: 350px;
+    margin-bottom: 2rem;
+    box-shadow: 0px 0px 8px 10px rgba(0, 0, 0, 0.2);
+}
+.both
+{
+    margin: 25px;
+}
+
+.image
+{
+    position: relative;
+}
+#main-img
+{
+    max-width: 100%;
+    border-radius: 9px;
+}
+
+.overlay
+{
+    background-color: hsl(178, 100%, 50%);
+    opacity: 40%;
+    position: absolute;
+    top: 0;
+    bottom: 2px;
+    left: 0;
+    right: 0;
+    border-radius: 9px;
+    display: none;
+}
+
+#view-img
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.text
+{
+    justify-content: left;
+}
+
+.text h3
+{
+    padding:1rem;
+    padding-left: 0;
+}
+
+.text p
+{
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-weight: lighter;
+    color: hsl(215, 51%, 70%);;
+}
+
+.two-contents
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.one-content
+{
+    display: flex;
+}
+
+.two-content
+{
+    display: flex;
+}
+
+.two-contents img
+{
+    margin-right: 7px;
+}
+
+.one-content span
+{
+    color: hsl(178, 100%, 50%);
+}
+
+.two-content span
+{
+    color: hsl(215, 51%, 70%);
+}
+
+hr
+{
+    border: 1px solid hsl(215, 32%, 27%);
+    border-radius: 10px;
+}
+
+.below-line
+{
+    display: flex;
+    margin-top: 2rem;
+}
+
+.below-line img
+{
+    width: 50px;
+    border-radius: 100%;
+    border: 1px solid hsl(0, 0%, 100%);
+}
+
+.below-line .lot
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+    color: hsl(215, 51%, 70%);
+}
+
+.jules
+{
+    margin-left: 3px;
+    color:  hsl(0, 0%, 100%);
+}
+
+h3:hover
+{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+.jules:hover
+{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.image:hover .overlay, .image:hover #view-img
+{
+    cursor: pointer;
+    display: block
+}
